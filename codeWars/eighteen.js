@@ -36,3 +36,23 @@ console.log(toCamelCase(''))
 console.log(toCamelCase("the_stealth_warrior"))//theStealthWarrior
 console.log(toCamelCase("The-Stealth-Warrior"))//TheStealthWarrior
 console.log(toCamelCase("A-B-C"))//ABC
+
+
+function toCamelCase(str) {
+  let arr = str.split(/[_-]/);
+
+  if (arr.length === 0) {
+    return "";
+  }
+
+  let result = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    result += arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+  }
+
+  return result;
+}
+console.log(toCamelCase(''))
+console.log(toCamelCase("the_stealth_warrior")); // theStealthWarrior
+console.log(toCamelCase("The-Stealth-Warrior")); // TheStealthWarrior
+console.log(toCamelCase("A-B-C"))//ABC
