@@ -4,7 +4,6 @@ function findNeedle(haystack) {
           if (haystack[i] === 'needle'){
               return `found the needle at position ${i}`
           } 
-          // console.log(haystack[3])
   }
   return 'needle is not find'
 }

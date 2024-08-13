@@ -15,35 +15,35 @@ console.log(evenOrOdd(0))
 
 
 function getPlanetName(id){
-   var id;
+   let name;
    switch(id){
      case 1:
-       id = 'Mercury'
+       name = 'Mercury'
        break
      case 2:
-       id = 'Venus'
+       name = 'Venus'
        break
      case 3:
-       id = 'Earth'
+       name = 'Earth'
        break
      case 4:
-       id = 'Mars'
+       name = 'Mars'
        break
      case 5:
-       id = 'Jupiter'
+       name = 'Jupiter'
        break
      case 6:
-       id = 'Saturn'
+       name = 'Saturn'
        break
      case 7:
-       id = 'Uranus'
+       name = 'Uranus'
        break
      case 8:
-       id = 'Neptune'
+       name = 'Neptune'
        break
    }
    
-   return id;
+   return name;
  }
  console.log(getPlanetName(2))//venus
  console.log(getPlanetName(5))//jupiter

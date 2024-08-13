@@ -1,5 +1,6 @@
 
 function hammingWeight(x) {
+  //mamakai bitwise
   let i = 0
   while (x > 0) {
     i += x & 1
